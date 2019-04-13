@@ -1,13 +1,7 @@
-#VS Code Sync
+#VSCode Extensions
 
-##Settings Sync
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across 
-Multiple Machines Using GitHub Gist.
+- [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer)
 
-==> https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync
-
-
-##SVG Viewer
-
-==> https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer
+- [Turbo Console Log](https://marketplace.visualstudio.com/items?itemName=ChakrounAnas.turbo-console-log)
