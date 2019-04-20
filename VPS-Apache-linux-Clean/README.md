@@ -25,6 +25,25 @@ You can empty all error_log files to 0 bytes usage with following command:
 find /home/ -name error_log -type f -print -exec truncate --size 0 "{}" \;
 ```
 
+
+Secure your Apache server from XML RPC Attack
+
+```bash
+sudo nano /etc/apache2/sites-available/000-default.conf
+```
+
+Add the highlighted lines below between the <VirtualHost> tags.
+
+```bash
+<VirtualHost>
+…    
+    <files xmlrpc.php>
+      order allow,deny
+      deny from all
+    </files>
+</VirtualHost>
+```
+
 #### References:
 
 1. [How to Clear disk Space on Cpanel Server](https://srvfail.com/clear-disk-space-cpanel-server/)
