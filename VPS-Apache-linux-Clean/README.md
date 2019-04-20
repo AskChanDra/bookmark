@@ -48,3 +48,4 @@ Add the highlighted lines below between the <VirtualHost> tags.
 
 1. [How to Clear disk Space on Cpanel Server](https://srvfail.com/clear-disk-space-cpanel-server/)
 2. [Clear disk space on CentOS 6 or CentOS 7](https://www.getpagespeed.com/server-setup/clear-disk-space-centos)
+3. [How To Protect WordPress from XML-RPC Attacks on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-protect-wordpress-from-xml-rpc-attacks-on-ubuntu-14-04)
