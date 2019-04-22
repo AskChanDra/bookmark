@@ -1,0 +1,7 @@
+#Plugins Collections:
+
+
+#### Dev Tools Plugins:
+
+- FakerPress : https://wordpress.org/plugins/fakerpress/
+- Rewrite Rules Inspector : https://wordpress.org/plugins/rewrite-rules-inspector/
