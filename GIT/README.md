@@ -1,5 +1,12 @@
 #GIT Helfull links
 
+#### Cheatsheet
+
+- Change GIT Origin URL
+```bash
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+
 ## Links
 - GIT Cheatsheet by [hofmannsven](https://github.com/hofmannsven): https://gist.github.com/hofmannsven/6814451
 - Related Setup: https://gist.github.com/hofmannsven/6814278
