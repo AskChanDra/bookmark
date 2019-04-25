@@ -25,6 +25,13 @@ You can empty all error_log files to 0 bytes usage with following command:
 find /home/ -name error_log -type f -print -exec truncate --size 0 "{}" \;
 ```
 
+- Clean Logs (Tested Bluehost VPS )
+```bash
+lsof / | grep deleted
+```
+
+
+
 
 Secure your Apache server from XML RPC Attack
 
