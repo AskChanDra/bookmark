@@ -52,7 +52,7 @@ curl  --user admin:password -d "title=hello+HELL&status=publish&content=Good+ips
 curl --request DELETE -I --user  admin:password https://example.com/wp-json/wp/v2/posts/100
 ```
 
-##### WP HTTP API
+#### WP HTTP API
 
 - ` wp_remote_get() ` : Retrieves a URL using the GET HTTP method.
 - ` wp_remote_post() ` : Retrieves a URL using the POST HTTP method.
@@ -67,13 +67,87 @@ curl --request DELETE -I --user  admin:password https://example.com/wp-json/wp/v
 - ` wp_remote_retrieve_response_code() ` :  Gives you the number for the HTTP response. This should be 200, but could be 4xx or even 3xx on failure.
 - ` wp_remote_retrieve_response_message() ` : Returns the response message based on the response code.
 
-###### DELETE post
+###### Authorization header
 
 ```php
 $wp_request_headers = array(
-    'Authorization' => 'Basic ' . base64_encode( 'username:password' )
+    'Authorization' => 'Basic ' . base64_encode( 'admin:password' )
 );
+```
+
+###### Get Post with ID 100 or List all Post
+
+```php
+
+// get List of Posts
+// $wp_request_url = 'https://example.com/wp-json/wp/v2/posts';
+
+// Get a Single Post
+$wp_request_url = 'https://example.com/wp-json/wp/v2/posts/18';
  
+$wp_get_post_response = wp_remote_get(
+            $wp_request_url,
+            array(
+            	'headers' => $wp_request_headers,
+            )
+        );
+
+echo wp_remote_retrieve_response_code( $wp_get_post_response ) . ' ' . wp_remote_retrieve_response_message( $wp_get_post_response );
+
+echo "<br > Body : " . wp_remote_retrieve_body($wp_get_post_response) . "";
+```
+
+- Response Code : ` 200 OK `
+
+###### Create Post
+
+```php
+$wp_request_url = 'https://example.com/wp-json/wp/v2/posts';
+ 
+$wp_create_post_response = wp_remote_post(
+            $wp_request_url,
+            array(
+            	'headers' => $wp_request_headers,
+                'body' => array(
+                    'title'   => 'Hello Worlddd',
+                    'status'     => 'publish',
+                    'content' => 'this is content ... '
+                )
+            )
+        );
+
+echo wp_remote_retrieve_response_code( $wp_create_post_response ) . ' ' . wp_remote_retrieve_response_message( $wp_create_post_response );
+```
+
+- Response Code : ` 201 Created `
+
+###### Update Post with ID 100
+```php
+$wp_request_url = 'https://example.com/wp-json/wp/v2/posts/100';
+ 
+$wp_update_post_response = wp_remote_request(
+            $wp_request_url,
+            array(
+            	'headers' => $wp_request_headers,
+            	'method'  => 'PUT',
+                'body' => array(
+                    'title'   => 'Hello Sydney',
+                    'status'     => 'publish',
+                    'content' => 'I hope this is updated content you seeing '
+                )
+            )
+        );
+
+echo wp_remote_retrieve_response_code( $wp_update_post_response ) . ' ' . wp_remote_retrieve_response_message( $wp_update_post_response );
+
+```
+
+- Response Code : ` 200 OK `
+
+###### Delete post with ID 100
+
+```php
+
 $wp_request_url = 'https://example.com/wp-json/wp/v2/posts/100';
  
 $wp_delete_post_response = wp_remote_request(
@@ -88,9 +162,11 @@ echo wp_remote_retrieve_response_code( $wp_delete_post_response ) . ' ' . wp_rem
 
 ```
 
+- Response Code : ` 200 Ok `
 
 
 #### Refrences:
 
 - Basic Auth Plugin : https://github.com/WP-API/Basic-Auth
 - Curl Options : https://gist.github.com/subfuzion/08c5d85437d5d4f00e58
+- Introduction to REST API : https://code.tutsplus.com/series/introducing-the-wp-rest-api--cms-896
