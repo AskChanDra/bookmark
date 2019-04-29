@@ -15,3 +15,12 @@
 - ` wp_remote_retrieve_headers() ` : Returns all of the HTTP headers in an array for processing.
 - ` wp_remote_retrieve_response_code() ` :  Gives you the number for the HTTP response. This should be 200, but could be 4xx or even 3xx on failure.
 - ` wp_remote_retrieve_response_message() ` : Returns the response message based on the response code.
+
+
+
+
+
+### References:
+
+- WP HTTP API : https://codex.wordpress.org/HTTP_API
+
