@@ -1,6 +1,20 @@
 #GIT Helfull links
 
 #### Cheatsheet
+- Create a new branch:
+```bash
+git checkout -b feature_branch_name
+```
+- Edit, add and commit your files
+- Push your branch to the remote repository:
+
+```bash
+git push -u origin feature_branch_name
+```
+
+
+
+###### Push a new local branch to a remote Git repository and track it too
 
 ###### Change GIT Origin URL
 
