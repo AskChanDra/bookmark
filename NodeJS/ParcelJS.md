@@ -68,3 +68,11 @@ parcel index.html
 to start a dev server. Importing JavaScript, CSS, images, and more just works!
 
 Now open `http://localhost:1234/` in your browser. If needed, you can also override the default port with the `-p` option. Add `--open` to automatically open a browser.
+
+```bash
+parcel index.html -p 3000 --open
+```
+
+#### Refrences:
+
+- [A curated list of awesome Parcel resources, libraries, tools and boilerplates](https://github.com/parcel-bundler/awesome-parcel)
