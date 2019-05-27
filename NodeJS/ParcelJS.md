@@ -76,3 +76,7 @@ parcel index.html -p 3000 --open
 #### Refrences:
 
 - [A curated list of awesome Parcel resources, libraries, tools and boilerplates](https://github.com/parcel-bundler/awesome-parcel)
+
+#### GIT Repo 
+
+- [AskChandra: Hello World Parcel JS](https://github.com/AskChanDra/ParcelJs)
