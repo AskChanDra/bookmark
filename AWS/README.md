@@ -1,4 +1,8 @@
-#AWS 
+# AWS : Amazone Web Services
+
+- Platform as a service
+- Software as a service
+- 
 
 To access the SSH:
 
