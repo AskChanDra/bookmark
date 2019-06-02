@@ -74,6 +74,11 @@ success: function(response) {
   }
 ```
 
+### References :
+
+- [A demo repo for my AJAX in WordPress Mini Course
+](https://github.com/zgordon/wordpress-ajax)
+
 
   
   
