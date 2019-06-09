@@ -16,3 +16,8 @@
 ```
 
 
+#### Laravel Tools
+
+- Pipe Dream / Laravel - Create Laravel projects really fast
+ : https://github.com/pipe-dream/laravel
+
