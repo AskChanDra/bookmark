@@ -36,6 +36,7 @@
 ### References :
 
 - Front End, Back End & Full Stack Web Development : https://www.youtube.com/watch?v=eRZHzi3l-4Q
+- Frontend vs Backend vs Fullstack Web Development - What should you learn? : https://www.youtube.com/watch?v=pkdgVYehiTE
 
 
 
