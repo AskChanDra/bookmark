@@ -79,6 +79,6 @@ success: function(response) {
 - [A demo repo for my AJAX in WordPress Mini Course
 ](https://github.com/zgordon/wordpress-ajax)
 
-
+- [How to Use Ajax in WordPress – a Real World Example](https://www.sitepoint.com/how-to-use-ajax-in-wordpress-a-real-world-example/)
   
   
