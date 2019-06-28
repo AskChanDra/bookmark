@@ -22,6 +22,6 @@
 
 
 ### References:
-
+- Flutter Awesome Bookmark List : https://github.com/Solido/awesome-flutter
 - Flutter Tuts Edureka: https://youtu.be/9XMt2hChbRo?t=1165
 - Academind (Udemy) : https://www.youtube.com/watch?v=GLSG_Wh_YWc
