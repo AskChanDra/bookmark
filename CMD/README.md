@@ -235,5 +235,4 @@ WHERE wp.ID IS NULL
 `grep 'groupname' /etc/group`
 
 ## Credits
-
-[Thank you to all the people who I owe most of these random snippets.](CREDITS.md)
+[https://github.com/emaildano/dev-cheat-sheet](https://github.com/emaildano/dev-cheat-sheet)
