@@ -8,6 +8,12 @@
 ```bash
 ssh-keygen -t rsa -b 4096 -C "email@example.com"
 ```
+
+- Check the files in your .ssh directory, if they exist
+```bash
+$ ls -al ~/.ssh
+```
+
 - Copy SSH fiels to clipboard
 ```bash
 clip <~/.ssh/id_rsa.pub
