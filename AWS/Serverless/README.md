@@ -1,4 +1,17 @@
-# AWS Serverless
+# Serverless Framework
+
+- Serverless Framework : https://serverless.com// 
+- Aims to ease the pain of creating, deploying, managing and debugging Lamda functions.
+- Integrates well with CI/CD tools
+- CloudFormation support so your entire stack can be deployed using this framework.
+ 
+
+### Setup:
+
+```bash
+npm install -g serverless
+```
+
 
 #### Examples :
 
