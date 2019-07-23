@@ -96,6 +96,31 @@ git add .
 git commit -m ".gitignore fix"
 ```
 
+### WPEngine Git
+
+- Go to local copy
+```bash
+cd ~/path/to/localcopy
+```
+
+- Add Production / Staging / Development Environment
+
+```bash
+
+git remote add production git@git.wpengine.com:production/prod-env-name.git
+
+git remote add staging git@git.wpengine.com:production/stage-env-name.git
+
+git remote add development git@git.wpengine.com:production/dev-env-name.git
+
+```
+
+- Get list of all remote
+
+```bash
+git remote -v
+```
+
 - Ref : http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/
 
 ## Links
