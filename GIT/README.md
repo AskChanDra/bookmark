@@ -70,10 +70,15 @@ ssh -T git@github.com
 
 
 
-#### Change GIT Origin URL
+#### Change and Remove GIT Origin URL
 
 ```bash
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+```
+- Remove Remote URL
+```bash
+git remote rm development
+git remote rm destination
 ```
 
 #### Untrack Already added files to Repo
