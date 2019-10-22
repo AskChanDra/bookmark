@@ -68,7 +68,11 @@ Host github.com
 ssh -T git@github.com
 ```
 
+#### Delete Git Repo tracking files
 
+```bash
+rm -rf .git
+```
 
 #### Change and Remove GIT Origin URL
 
